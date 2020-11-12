@@ -11,7 +11,7 @@ def select_winner (birthday_kids)
       winner = name
     end
   end
-   
+
   winner
 end
 
