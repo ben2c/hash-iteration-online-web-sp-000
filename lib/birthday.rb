@@ -4,6 +4,17 @@
 #   "Amanda" => 27
 # }
 
+def select_winner (birthday_kids)
+  winner = ""
+  passengers.each do |suite, name|
+    if suite == :suite_a && name.start_with?("A")
+      winner = name
+    end
+  end
+
+  winner
+end
+
 def happy_birthday(birthday_kids)
   # add your code snippet here!
   birthday_kids.each do |key, value|
